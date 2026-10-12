@@ -1,0 +1,5 @@
+# Optional PC GUI; Jetson uses its platform PyQt package instead.
+-r requirements-sim.txt
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.18
+PyQt5-sip==12.17.2

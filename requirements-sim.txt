@@ -1,0 +1,2 @@
+# Tested PC synthetic dependency; not a Jetson runtime specification.
+numpy==1.26.4

@@ -1,0 +1,6 @@
+# Tested Python 3.12 synthetic test environment.
+-r requirements-sim.txt
+pytest==8.3.5
+iniconfig==2.3.1
+packaging==26.3
+pluggy==1.6.0
