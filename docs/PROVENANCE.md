@@ -28,8 +28,10 @@ historical university team project. The account making that commit is not
 credited as the sole author of the application. No contribution percentages
 or personal names beyond the supplied team identifiers are inferred.
 
-The original development repository retains the team's preparation and review
-records. Two internal phase reports are omitted from the portfolio snapshot;
+The clean repository subsequently inherited the original project name. Former
+development records were not imported into this independent history; their
+continued availability is not guaranteed by this repository. Two internal phase
+reports are omitted from the portfolio snapshot;
 the original source inventory, technical behavior, regression evidence,
 attribution and applicable rights remain documented here and in the linked
 technical guides. This independent history does not erase copies, caches or
@@ -51,7 +53,7 @@ release their respective original code contributions under the [MIT License](../
 including commercial use, modification and redistribution. This replaces the
 earlier publication-only consent and no-application-license decision.
 [LICENSING.md](LICENSING.md) records the team grant and independently
-applicable third-party rights. The repository remains private for review.
+applicable third-party rights.
 
 ## Complete original file inventory
 
@@ -122,7 +124,7 @@ not proof of the actual weights' identity, integrity, authorship, or license.
 [MODELS.md](MODELS.md) distinguishes official upstream sources from the absent
 team artifacts, including unknown rights for the custom speech model and the
 ambiguous pose checkpoint format. No model was fetched, restored, uploaded,
-committed, or deserialized during source preparation or clean staging.
+committed, or deserialized during source preparation or independent snapshot validation.
 
 ## Historical assertions and publication boundary
 
@@ -145,7 +147,7 @@ Concrete permission or provenance concerns are reported separately in
 before any future artifact distribution, and validate the intended hardware
 runtime before claiming real-world inference or performance. Keep local
 checkpoints, recordings, logs, generated engines, caches, environment
-directories and credentials out of Git. MIT adoption does not authorize
-public visibility, repository renaming, a tag or release. The independent
-repository remains private pending separate owner authorization for final
-cutover and review of any additional distribution obligations.
+directories and credentials out of Git. Visibility changes, tags, GitHub
+Releases and GitHub Profile pinning require separate owner authorization;
+MIT adoption does not authorize these actions. Additional distributions require
+review of their applicable obligations.

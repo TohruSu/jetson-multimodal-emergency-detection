@@ -138,7 +138,7 @@ GitHub can still update the hosted image within that OS family. These changes
 retain all three jobs, their Python targets, dependencies, commands, assertions
 and timeouts. Hosted results for the independent repository must correspond
 to its clean commit. Runs from the original development repository are not
-presented as validation runs of a new staging repository.
+presented as validation runs of this independent repository.
 
 An early hosted setup failed before executing tests because setup-python's
 default cache discovery expects requirements.txt or pyproject.toml. The workflow

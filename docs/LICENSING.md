@@ -23,9 +23,9 @@ and help-keyword detection; Martin's fusion, GUI and main integration; and
 shared team components. It preserves the original source inventory without
 inventing individual commit authorship.
 
-The repository remains private pending separate owner authorization for final
-cutover. MIT adoption does not authorize a visibility change, rename, tag,
-Release, model distribution or GitHub Profile update.
+The clean repository has inherited the original project name. Visibility
+changes, tags, GitHub Releases and GitHub Profile pinning require separate owner
+authorization; MIT adoption does not authorize these actions or model distribution.
 
 ## Third-party licensing boundaries
 

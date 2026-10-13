@@ -2,8 +2,9 @@
 
 ## Current decision
 
-**Keep this independent repository private pending separate owner authorization
-for final cutover.** SU confirms that SU, SONG, HUO and Martin have each
+The independent clean repository has inherited the original project name.
+Visibility changes, GitHub Releases and GitHub Profile pinning are separate
+owner-authorized actions. SU confirms that SU, SONG, HUO and Martin have each
 agreed to MIT licensing of their original contributions, including commercial
 use, modification and redistribution. The complete [LICENSE](../LICENSE)
 replaces the earlier no-application-license strategy.
@@ -56,7 +57,8 @@ provenance and permission review.
 Two internal phase reports are excluded from this portfolio snapshot after
 checking that retained documentation no longer depends on them. Private
 development SHAs, PR links and Actions-history links are omitted. The
-original repository retains its historical records. The complete source-tree
+former development records were not imported into this independent history;
+their continued retention or availability is not guaranteed. The complete source-tree
 comparison, exclusion manifest, Git identity/privacy checks and migration
 status are recorded separately in the private delivery evidence.
 
@@ -65,14 +67,14 @@ status are recorded separately in the private delivery evidence.
 This repository starts from a file-tree export and a new initial commit; it
 does not import development Git objects, branches, tags, PRs or Actions
 history. New commit identity and all reachable refs must be verified before
-any publication. Independent staging preserves the original repository rather
-than rewriting or deleting its records. It does not erase cached or
+any publication. This independent history does not depend on the continued
+availability of the former development repository. It does not erase cached or
 independently cloned copies of any earlier public history.
 
 Pattern scans and available refs cannot establish the absence of every
-possible secret encoding or inaccessible server record. Public visibility,
-repository renaming, release creation and Profile changes remain separately
-authorized actions, after validation and publication-condition review.
+possible secret encoding or inaccessible server record. Visibility changes,
+tags, GitHub Releases and GitHub Profile pinning require separate owner
+authorization, after validation and publication-condition review.
 
 ## Reproducible validation
 
@@ -87,9 +89,17 @@ in the private migration evidence.
 The unchanged workflow retains headless Python 3.10 and 3.12 jobs and a
 separate Python 3.12 offscreen GUI job, using the pinned action revisions and
 `ubuntu-24.04` runner family. This independent repository's initial snapshot
-passed its own [hosted run 38285191827](https://github.com/TohruSu/jetson-multimodal-emergency-detection-clean-staging/actions/runs/38285191827):
+passed its own [hosted run 38285191827](https://github.com/TohruSu/jetson-multimodal-emergency-detection/actions/runs/38285191827):
 both headless jobs completed pytest, the original fusion checks and the
 five-worker smoke successfully, and the independent offscreen GUI job passed.
+
+The subsequent [hosted run 38331906218](https://github.com/TohruSu/jetson-multimodal-emergency-detection/actions/runs/38331906218)
+also succeeded at `91c626be602976b1419ce50f55be1186717dcb30`. Downloaded logs
+confirmed 132 passing tests on both Python 3.10 and 3.12, all three original
+fusion scenarios and the five-worker smoke with L1 followed by L2 and clean
+worker shutdown. The independent offscreen GUI job verified video, depth,
+heartbeats, L1/L2 escalation, manual reset, alert logging and worker cleanup.
+
 Each subsequent change must be verified by hosted results for its own commit;
 successful runs from the original development repository are separate evidence.
 
