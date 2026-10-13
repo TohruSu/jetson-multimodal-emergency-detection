@@ -60,7 +60,8 @@ development SHAs, PR links and Actions-history links are omitted. The
 former development records were not imported into this independent history;
 their continued retention or availability is not guaranteed. The complete source-tree
 comparison, exclusion manifest, Git identity/privacy checks and migration
-status are recorded separately in the private delivery evidence.
+status were reviewed during private preparation; continued access to separate
+private delivery evidence is not guaranteed.
 
 ## Independent history and privacy boundary
 
@@ -83,8 +84,8 @@ skips or expected failures, all three original fusion scenarios, the
 16-second five-worker smoke with L1 then L2 and five zero exit codes, the
 independent offscreen GUI check with manual reset and worker cleanup, and
 `python -m pip check`. [TESTING.md](TESTING.md) records reproducible commands
-and coverage. Exact command output is retained outside the publication tree
-in the private migration evidence.
+and coverage. These checks were performed during private preparation;
+continued access to separate raw command output is not guaranteed.
 
 The unchanged workflow retains headless Python 3.10 and 3.12 jobs and a
 separate Python 3.12 offscreen GUI job, using the pinned action revisions and
