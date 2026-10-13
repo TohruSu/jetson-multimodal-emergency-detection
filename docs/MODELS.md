@@ -27,9 +27,10 @@ The official README, license, and skeleton checks used verified HTTPS and read-o
 
 ## Dependency and distribution boundaries
 
-The owner's [source-visible publication decision](LICENSING.md) grants no
-general reuse license for the team's application. It does not change the
-licenses of the bundled NVIDIA asset or separately installed dependencies.
+The team's original application source is [MIT-licensed](../LICENSE) under the
+owner's [confirmed collective authorization](LICENSING.md). This grant does
+not relicense the bundled NVIDIA asset, separately installed dependencies or
+absent models, datasets, recordings and generated TensorRT engines.
 The repository supplies dependency declarations and integration source, not
 copies of the PC virtual environment or Jetson runtime packages.
 
@@ -49,15 +50,18 @@ PyQt and Qt have distinct terms. The publisher's [PyQt5 package
 description](https://pypi.org/project/PyQt5/5.15.11/) identifies the GPL and
 commercial options; the [Qt runtime package
 description](https://pypi.org/project/PyQt5-Qt5/5.15.18/) identifies LGPL v3.
-The current source imports PyQt5 rather than vendoring it. That distinction
-does not establish that every form of GUI application distribution is
-compatible with the selected application terms. Review the applicable PyQt
-GPL/commercial conditions for publication of the GUI integration source under
-the selected no-general-reuse-license scope, or document applicable commercial
-entitlement, before source publication. No entitlement or compatibility
-determination is recorded here; the team code is not automatically relabeled
-GPL. A combined GUI application, executable, container, or bundled environment
-also requires its own PyQt GPL/commercial and Qt LGPL review.
+The current source imports PyQt5 rather than vendoring it. Riverbank's
+[licensing guidance](https://www.riverbankcomputing.com/static/Docs/PyQt5/introduction.html#license)
+identifies GPLv3 and commercial options. GNU lists the
+[Expat/MIT license as GPL-compatible](https://www.gnu.org/licenses/license-list.html#Expat).
+MIT adoption therefore removes the earlier conflict with withholding general
+reuse rights, but it does not waive GPL obligations for distribution of a
+combined application using GPL PyQt5 or establish commercial entitlement.
+The separately installed Qt runtime has its own
+[LGPL obligations](https://www.qt.io/licensing/open-source-lgpl-obligations).
+A combined GUI application, executable, container or bundled environment
+requires review of its actual PyQt GPL/commercial and Qt LGPL obligations;
+no distribution scenario is legally certified here.
 
 The historical Jetson dependencies are not a pinned, rights-reviewed binary
 distribution. Any future packaging must review the actual versions and

@@ -135,5 +135,10 @@ See [ARCHITECTURE](docs/ARCHITECTURE.md) for further technical details.
 
 ## License and Attribution
 
-The source-visible publication scope and applicable attribution are recorded in
-[LICENSING](docs/LICENSING.md).
+The team's original application source is licensed under the [MIT License](LICENSE),
+with contributions by **SU, SONG, HUO, and Martin** as described above.
+Third-party content and dependencies retain their own terms, including NVIDIA's
+scoped asset notice and PyQt5's GPLv3/commercial licensing; distributing a
+combined application can carry additional obligations. See
+[Licensing](docs/LICENSING.md) and [Third-party notices](docs/THIRD_PARTY_NOTICES.md).
+Model weights, datasets, recordings and generated TensorRT engines are excluded.

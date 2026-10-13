@@ -2,34 +2,31 @@
 
 ## Current decision
 
-**Keep this independent staging repository private. Source-visible publication
-is conditional on resolving the PyQt application-terms question and obtaining
-separate owner authorization.** The owner has selected public viewing and
-technical evaluation without a repository-wide application license; lack of
-MIT or another general reuse license is not itself a publication blocker.
+**Keep this independent repository private pending separate owner authorization
+for final cutover.** SU confirms that SU, SONG, HUO and Martin have each
+agreed to MIT licensing of their original contributions, including commercial
+use, modification and redistribution. The complete [LICENSE](../LICENSE)
+replaces the earlier no-application-license strategy.
+[LICENSING.md](LICENSING.md) records team attribution, the MIT grant and
+independently applicable third-party rights.
 
-The reported consent of SU, SONG, HUO and Martin to GitHub publication is
-distinct from any future agreement to grant broader reuse rights.
-[LICENSING.md](LICENSING.md) records the selected scope, independently
-applicable third-party rights and GitHub's Terms of Service. No application-wide
-`LICENSE`, commercial entitlement or automatic relicensing is inferred.
+## PyQt and distribution conditions
 
-## Separate PyQt publication condition
+The team's original application source is MIT-licensed. The GUI continues to
+import and subclass PyQt5; its pinned PyPI build remains GPLv3, or an applicable
+commercial license may be obtained separately. MIT is GPL-compatible, removing
+the previous conflict with the no-general-reuse-license strategy. This does
+not waive GPL obligations when distributing a combined application using
+GPL PyQt5, nor establish commercial entitlement. The separately installed Qt
+runtime has its own LGPLv3 obligations.
 
-The GUI imports and subclasses PyQt5. The pinned PyPI PyQt5 5.15.11 build uses
-GPL v3 terms; the publisher also offers a separate commercial license. No
-determination that publishing this integration source under the selected
-application terms is compatible with the applicable PyQt conditions, or
-evidence of applicable commercial entitlement, is recorded. Resolve this
-before making the repository public. Merely installing PyQt externally does
-not establish clearance. The separately installed Qt runtime has distinct
-LGPL v3 terms. [MODELS.md](MODELS.md) records the dependency evidence and
-distribution boundaries.
-
-This condition is separate from model/data redistribution and from privacy
-checks. It does not automatically relicense the team's code. A combined GUI,
-executable, container or bundled environment also requires review of its
-actual PyQt GPL/commercial and Qt LGPL obligations.
+The root license does not relicense PyQt, Qt or other third-party components.
+A combined GUI, executable, container or bundled environment still needs
+review of its actual GPL/commercial and LGPL obligations. No distribution
+scenario is legally certified by the source-only audit.
+[MODELS.md](MODELS.md) and [LICENSING.md](LICENSING.md) record the dependency
+evidence and authoritative licensing references. Model/data redistribution
+and privacy checks remain separate.
 
 ## Preserved content and artifact scope
 
@@ -89,10 +86,12 @@ in the private migration evidence.
 
 The unchanged workflow retains headless Python 3.10 and 3.12 jobs and a
 separate Python 3.12 offscreen GUI job, using the pinned action revisions and
-`ubuntu-24.04` runner family. Hosted results must correspond to the independent
-repository's clean commit. Successful runs from the original repository do
-not establish that new staging CI has passed; hosted validation remains
-required after a private staging repository is created and pushed.
+`ubuntu-24.04` runner family. This independent repository's initial snapshot
+passed its own [hosted run 38285191827](https://github.com/TohruSu/jetson-multimodal-emergency-detection-clean-staging/actions/runs/38285191827):
+both headless jobs completed pytest, the original fusion checks and the
+five-worker smoke successfully, and the independent offscreen GUI job passed.
+Each subsequent change must be verified by hosted results for its own commit;
+successful runs from the original development repository are separate evidence.
 
 Synthetic, mocked and offscreen checks verify software behavior. They do not
 validate Jetson inference accuracy, camera/microphone operation, model

@@ -1,6 +1,6 @@
 # Third-party asset notice
 
-This notice applies **only** to `modules/song/human_pose.json`. It does not assign a license to the team's application code, external frameworks, datasets, or model weights. The owner selected source-visible publication without a general application reuse license; see [LICENSING.md](LICENSING.md).
+This notice applies **only** to `modules/song/human_pose.json`. It does not assign a license to the team's application code, external frameworks, datasets, or model weights. The team's original application source has its own [MIT License](../LICENSE); that collective copyright notice does not replace NVIDIA's independently applicable notice below. See [LICENSING.md](LICENSING.md) for dependency and distribution boundaries.
 
 The supplied 510-byte skeleton is byte-identical to the official NVIDIA `trt_pose` asset:
 

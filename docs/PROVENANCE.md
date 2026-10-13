@@ -46,11 +46,11 @@ service records of any earlier repository.
 | **Team integration; individual authorship uncertain** | Merged GPU scheduling, sensor capture, queue/simulation utilities, streaming glue, diagnostics and integration tests | These support the shared application. No reliable record supports assigning their entire contents exclusively to SU or another teammate. |
 
 These describe evidenced responsibilities, not a line-by-line authorship claim.
-The owner, SU, reports that teammates agreed to GitHub publication. The
-owner selected source-visible publication for viewing and technical evaluation
-without a repository-wide application license. Reported publication consent is
-separate from any future agreement to grant broader reuse rights;
-[LICENSING.md](LICENSING.md) records that distinction and independently
+The owner, SU, explicitly confirms that SU, SONG, HUO and Martin agreed to
+release their respective original code contributions under the [MIT License](../LICENSE),
+including commercial use, modification and redistribution. This replaces the
+earlier publication-only consent and no-application-license decision.
+[LICENSING.md](LICENSING.md) records the team grant and independently
 applicable third-party rights. The repository remains private for review.
 
 ## Complete original file inventory
@@ -138,14 +138,14 @@ context is a camera-frame region plus relative depth, not geographic coordinates
 or metric distance. Synthetic tests validate software control flow and queue
 communication; they do not establish reliable physical monitoring.
 
-The owner's source-visible, no-repository-wide-license decision governs the
-proposed source-only publication; selecting MIT is not a remaining requirement.
+The team's original application source is MIT-licensed under the owner's
+confirmed collective authorization; third-party content retains its own terms.
 Concrete permission or provenance concerns are reported separately in
 [PUBLICATION_AUDIT.md](PUBLICATION_AUDIT.md). Establish model/training rights
 before any future artifact distribution, and validate the intended hardware
 runtime before claiming real-world inference or performance. Keep local
 checkpoints, recordings, logs, generated engines, caches, environment
-directories and credentials out of Git. Clean staging does not authorize
-public visibility, a release, or an application-wide license. The independent
-repository remains private until the separate publication conditions and
-owner authorization are satisfied.
+directories and credentials out of Git. MIT adoption does not authorize
+public visibility, repository renaming, a tag or release. The independent
+repository remains private pending separate owner authorization for final
+cutover and review of any additional distribution obligations.
