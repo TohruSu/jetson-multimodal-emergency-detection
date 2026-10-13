@@ -4,7 +4,7 @@
 
 The independent clean repository has inherited the original project name.
 Visibility changes, GitHub Releases and GitHub Profile pinning are separate
-owner-authorized actions. SU confirms that SU, SONG, HUO and Martin have each
+owner-authorized actions. Su confirms that Su, Song, Huo and Martin have each
 agreed to MIT licensing of their original contributions, including commercial
 use, modification and redistribution. The complete [LICENSE](../LICENSE)
 replaces the earlier no-application-license strategy.
@@ -35,7 +35,7 @@ The independent snapshot preserves the reviewed application implementation,
 tests, dependency declarations, workflow and README presentation. All 35
 original source paths remain present. Original-input hashes are retained in
 [SOURCE_MANIFEST.json](SOURCE_MANIFEST.json), and [PROVENANCE.md](PROVENANCE.md)
-preserves SU's depth/ROI and pose-to-depth work, SONG's pose/fall work, HUO's
+preserves Su's depth/ROI and pose-to-depth work, Song's pose/fall work, Huo's
 speech/features work, Martin's fusion/UI/main work and shared integration.
 The clean initial commit records a portfolio snapshot, not individual
 authorship of the historical university team project.

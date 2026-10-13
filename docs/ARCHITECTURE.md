@@ -35,7 +35,7 @@ There are two execution arrangements:
 | Mode | Child processes | Depth handoff |
 | --- | --- | --- |
 | `python main.py --sim` | Video, audio, gesture, depth, speech: five | Gesture and depth read the shared synthetic scene; simulated depth does not consume pose packets. |
-| `python main.py` | Video, audio, merged GPU, speech: four | The GPU worker runs real pose and optional depth sequentially in one process, constructing SU's packet inline. |
+| `python main.py` | Video, audio, merged GPU, speech: four | The GPU worker runs real pose and optional depth sequentially in one process, constructing Su's packet inline. |
 
 The standalone `gesture_process` and `depth_process` retain a frame-plus-bbox
 queue interface for independent integration. The real application currently
@@ -128,7 +128,7 @@ mechanism applies after a driver returns an error; it cannot bound a stalled
 blocking read. Actual reconnection and shutdown behavior still need hardware
 validation.
 
-## Pose and fall detection: SONG
+## Pose and fall detection: Song
 
 `modules/song/fall_detector.py` implements keypoint feature extraction, greedy
 multi-person matching, EMA keypoint smoothing, and per-track
@@ -154,7 +154,7 @@ runtime inference failure reports `degraded`, keeps the process alive, and
 permits another attempt on a later frame; success restores `ready`. Check [MODELS.md](MODELS.md) for artifact and rights
 requirements.
 
-## Relative depth and pose-to-depth integration: SU
+## Relative depth and pose-to-depth integration: Su
 
 `DepthEstimator` wraps Depth Anything V2 Small, infers a relative depth map,
 clips the person bbox, removes a margin around the ROI, trims extreme values,
@@ -194,10 +194,10 @@ instead of increasing forever. The adapter's age and latency fields therefore
 do not measure complete camera-to-inference delay. These limitations remain
 for a hardware integration phase.
 
-## Speech keyword recognition: HUO
+## Speech keyword recognition: Huo
 
 The primary implementation loads a two-class ResNet-18 state dictionary for
-`hello` / `help`. HUO's `AudioFeatureExtractor` computes a torch STFT, mel
+`hello` / `help`. Huo's `AudioFeatureExtractor` computes a torch STFT, mel
 filterbank, normalized log-mel spectrogram, and a 224-by-224 image repeated
 into three channels. The streaming wrapper buffers 2.5 seconds of PCM, attempts
 inference after a one-second hop, applies an RMS energy gate and confidence
@@ -209,15 +209,15 @@ new accuracy study. They are overridable through `SPEECH_ENERGY_GATE` and
 energy gating is only a heuristic. Historical speaker and training-data claims
 are not independently verifiable from this source-only archive.
 
-An optional locally installed Vosk recognizer is attempted when the HUO model
+An optional locally installed Vosk recognizer is attempted when the Huo model
 cannot load. It searches final and partial transcript text for `help`, `aide`,
 or `tasukete` and assigns fixed event confidences. This uses substring matching
 and can repeat partial-result events. Vosk is labeled `degraded` with a fallback reason even when it is functional,
-so it cannot appear as the intended HUO backend. Missing both real recognizers
+so it cannot appear as the intended Huo backend. Missing both real recognizers
 leaves speech alive with `unavailable` health. Initialization failures require
 restart after correcting the local setup. Runtime inference failures retain
 the process and report `degraded`; later successful input processing restores
-`ready` for HUO or the fallback `degraded` state for Vosk. Simulation emits
+`ready` for Huo or the fallback `degraded` state for Vosk. Simulation emits
 scripted help independently of audio.
 
 ## Fusion, presentation, and simulation

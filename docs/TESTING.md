@@ -16,7 +16,7 @@ python -m tests.smoke_sim
 ```
 
 The pytest suite exercises fusion transitions and time boundaries, simulation
-clock/cycle logic, queue policies, SU's packet validation and processor control
+clock/cycle logic, queue policies, Su's packet validation and processor control
 with injected estimators, blocked hardware imports, worker failures, microphone
 argument routing, and cleanup after GUI startup failure. Integration coverage includes mocked
 sensor failure/reconnection, model initialization/runtime failures, Vosk fallback

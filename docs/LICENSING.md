@@ -2,7 +2,7 @@
 
 ## Team MIT authorization
 
-The owner, SU, explicitly confirms that **SU, SONG, HUO, and Martin** have all
+The owner, Su, explicitly confirms that **Su, Song, Huo, and Martin** have all
 agreed to release their respective original code contributions under the
 [MIT License](../LICENSE), including commercial use, modification and
 redistribution. This supersedes the earlier source-visible, no-application-license
@@ -10,15 +10,15 @@ decision. MIT authorization is confirmed; broader reuse permission is no
 longer pending.
 
 The complete standard MIT text appears in the root `LICENSE`, with the
-collective notice `Copyright (c) 2026 SU, SONG, HUO, and Martin`. Its terms
+collective notice `Copyright (c) 2026 Su, Song, Huo, and Martin`. Its terms
 require preservation of the copyright and permission notices and include the
 standard warranty disclaimer. The license covers the team's original work;
 it does not relicense independently copyrighted third-party content or external
 dependencies. Repository ownership does not make the collaborative application
-exclusively SU's work.
+exclusively Su's work.
 
-[PROVENANCE.md](PROVENANCE.md) records SU's relative-depth, Depth Anything V2,
-ROI and pose-to-depth integration; SONG's pose and fall detection; HUO's speech
+[PROVENANCE.md](PROVENANCE.md) records Su's relative-depth, Depth Anything V2,
+ROI and pose-to-depth integration; Song's pose and fall detection; Huo's speech
 and help-keyword detection; Martin's fusion, GUI and main integration; and
 shared team components. It preserves the original source inventory without
 inventing individual commit authorship.

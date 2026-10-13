@@ -16,15 +16,12 @@ Historical documentation and source comments support these responsibilities:
 
 | Contributor | Original responsibility |
 | --- | --- |
-| SU | Relative depth estimation, Depth Anything V2 integration, person ROI processing, pose-to-depth handoff |
-| SONG | Pose estimation, multiperson tracking, fall detection |
-| HUO | Speech features, recognition, help-keyword detection |
+| Su | Relative depth estimation, Depth Anything V2 integration, person ROI processing, pose-to-depth handoff |
+| Song | Pose estimation, multiperson tracking, fall detection |
+| Huo | Speech features, recognition, help-keyword detection |
 | Martin | Fusion state machine, PyQt5 UI, main application integration |
 
-Capture, messaging, GPU coordination, streaming glue, and integration utilities
-are shared team components. [Provenance](docs/PROVENANCE.md) preserves the
-original 35-file inventory and source hashes without inventing individual
-commit history or exclusive authorship of the application.
+Capture, messaging, GPU coordination, streaming glue, and integration utilities are shared team components. See [Provenance](docs/PROVENANCE.md) for the original source inventory and team contributions.
 
 ## How the modalities combine
 
@@ -108,10 +105,6 @@ python3 main.py --depth          # optional relative depth
 python3 test_console.py 60       # hardware console without Qt
 ```
 
-No checkpoints, training data, recordings, or generated TensorRT artifacts are
-distributed. Historical model identity and redistribution rights remain
-unverified; framework licenses do not establish a particular model's rights.
-
 ## Runtime health
 
 The UI separates worker heartbeats from backend health: `READY`, `SIMULATION`,
@@ -136,7 +129,7 @@ See [ARCHITECTURE](docs/ARCHITECTURE.md) for further technical details.
 ## License and Attribution
 
 The team's original application source is licensed under the [MIT License](LICENSE),
-with contributions by **SU, SONG, HUO, and Martin** as described above.
+with contributions by **Su, Song, Huo, and Martin** as described above.
 Third-party content and dependencies retain their own terms, including NVIDIA's
 scoped asset notice and PyQt5's GPLv3/commercial licensing; distributing a
 combined application can carry additional obligations. See

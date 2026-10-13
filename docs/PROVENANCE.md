@@ -41,14 +41,14 @@ service records of any earlier repository.
 
 | Team identifier | Documented responsibility | Evidence and limits |
 | --- | --- | --- |
-| **SU** | Depth Anything V2 integration, relative depth, person ROI processing, pose-to-depth protocol and integration | Historical README; `modules/depth_su.py` owner header; `modules/su_depth/` interfaces. Ownership of this repository does not establish exclusive authorship of other components. |
-| **SONG** | Pose estimation and fall detection | Historical README; `modules/gesture_song.py` owner header and integration comments; `modules/song/fall_detector.py`. NVIDIA's pose framework and topology asset remain separate third-party dependencies/content. |
-| **HUO** | Speech recognition, keyword model and feature extraction | Historical README; `modules/speech_huo.py` owner header; `modules/huo/feature.py` attribution in streaming wrapper. The streaming adapter also contains team integration logic. |
+| **Su** | Depth Anything V2 integration, relative depth, person ROI processing, pose-to-depth protocol and integration | Historical README; `modules/depth_su.py` owner header; `modules/su_depth/` interfaces. Ownership of this repository does not establish exclusive authorship of other components. |
+| **Song** | Pose estimation and fall detection | Historical README; `modules/gesture_song.py` owner header and integration comments; `modules/song/fall_detector.py`. NVIDIA's pose framework and topology asset remain separate third-party dependencies/content. |
+| **Huo** | Speech recognition, keyword model and feature extraction | Historical README; `modules/speech_huo.py` owner header; `modules/huo/feature.py` attribution in streaming wrapper. The streaming adapter also contains team integration logic. |
 | **Martin** | Fusion state machine, UI, and main application integration | Historical README and owner headers in `main.py`, `fusion/state_machine.py`, and `ui/main_window.py`; `common/messages.py` credits the message architecture decision. |
-| **Team integration; individual authorship uncertain** | Merged GPU scheduling, sensor capture, queue/simulation utilities, streaming glue, diagnostics and integration tests | These support the shared application. No reliable record supports assigning their entire contents exclusively to SU or another teammate. |
+| **Team integration; individual authorship uncertain** | Merged GPU scheduling, sensor capture, queue/simulation utilities, streaming glue, diagnostics and integration tests | These support the shared application. No reliable record supports assigning their entire contents exclusively to Su or another teammate. |
 
 These describe evidenced responsibilities, not a line-by-line authorship claim.
-The owner, SU, explicitly confirms that SU, SONG, HUO and Martin agreed to
+The owner, Su, explicitly confirms that Su, Song, Huo and Martin agreed to
 release their respective original code contributions under the [MIT License](../LICENSE),
 including commercial use, modification and redistribution. This replaces the
 earlier publication-only consent and no-application-license decision.
@@ -74,21 +74,21 @@ Original bytes can be identified using the manifest.
 | `capture/audio_capture.py` | Real PyAudio PCM producer or synthetic silence; shared integration | Preserved. |
 | `capture/video_capture.py` | Real OpenCV camera producer or synthetic scene; shared integration | Preserved. |
 | `modules/__init__.py` | Package marker | Preserved. |
-| `modules/depth_su.py` | Depth process contract, synthetic levels, standalone real packet adapter; SU and integration | Preserved. |
-| `modules/gesture_song.py` | SONG detector wrapper, fall events, boxes, selected person packet; SONG and team integration | Preserved. |
+| `modules/depth_su.py` | Depth process contract, synthetic levels, standalone real packet adapter; Su and integration | Preserved. |
+| `modules/gesture_song.py` | Song detector wrapper, fall events, boxes, selected person packet; Song and team integration | Preserved. |
 | `modules/gpu_worker.py` | Sequential real pose/depth in one CUDA process; team integration | Preserved. |
-| `modules/speech_huo.py` | HUO keyword wrapper, optional Vosk, scripted help; HUO and team integration | Preserved. |
+| `modules/speech_huo.py` | Huo keyword wrapper, optional Vosk, scripted help; Huo and team integration | Preserved. |
 | `modules/huo/__init__.py` | Package marker | Preserved. |
-| `modules/huo/classifier.py` | Streaming PCM windows, energy gate, ResNet classifier and cooldown; HUO model / team integration | Preserved. |
-| `modules/huo/feature.py` | Torch STFT, mel filterbank and spectrogram feature extraction; HUO | Preserved. |
+| `modules/huo/classifier.py` | Streaming PCM windows, energy gate, ResNet classifier and cooldown; Huo model / team integration | Preserved. |
+| `modules/huo/feature.py` | Torch STFT, mel filterbank and spectrogram feature extraction; Huo | Preserved. |
 | `modules/song/__init__.py` | Lazy library integration note | Preserved. |
-| `modules/song/fall_detector.py` | Pose features, per-person tracker/fall state machine; SONG | Preserved; real runtime remains hardware-dependent. |
-| `modules/song/human_pose.json` | NVIDIA `trt_pose` keypoints and skeleton topology, not a SONG-authored model | Preserved with verified upstream origin and scoped third-party notice. |
-| `modules/su_depth/__init__.py` | Depth API exports and lazy estimator access; SU/integration | Preserved. |
-| `modules/su_depth/config.py` | Depth defaults and reusable CLI argument helpers; SU | Preserved; not all helpers are used by `main.py`. |
-| `modules/su_depth/depth_estimator.py` | External Depth Anything V2 model wrapper, ROI statistics and depth colorization; SU | Preserved; model/framework are supplied separately. |
-| `modules/su_depth/depth_processor.py` | Camera-free depth processing, bbox validation, EMA, classification and reset; SU | Preserved. |
-| `modules/su_depth/integration.py` | Pose packet creation/validation, stale/no-target handling and identity reset; SU | Preserved. |
+| `modules/song/fall_detector.py` | Pose features, per-person tracker/fall state machine; Song | Preserved; real runtime remains hardware-dependent. |
+| `modules/song/human_pose.json` | NVIDIA `trt_pose` keypoints and skeleton topology, not a Song-authored model | Preserved with verified upstream origin and scoped third-party notice. |
+| `modules/su_depth/__init__.py` | Depth API exports and lazy estimator access; Su/integration | Preserved. |
+| `modules/su_depth/config.py` | Depth defaults and reusable CLI argument helpers; Su | Preserved; not all helpers are used by `main.py`. |
+| `modules/su_depth/depth_estimator.py` | External Depth Anything V2 model wrapper, ROI statistics and depth colorization; Su | Preserved; model/framework are supplied separately. |
+| `modules/su_depth/depth_processor.py` | Camera-free depth processing, bbox validation, EMA, classification and reset; Su | Preserved. |
+| `modules/su_depth/integration.py` | Pose packet creation/validation, stale/no-target handling and identity reset; Su | Preserved. |
 | `fusion/__init__.py` | Package marker | Preserved. |
 | `fusion/state_machine.py` | L1/L2 alert fusion, contextual text and local logging; Martin | Preserved with minimal verified fusion corrections. |
 | `ui/__init__.py` | Package marker | Preserved. |
